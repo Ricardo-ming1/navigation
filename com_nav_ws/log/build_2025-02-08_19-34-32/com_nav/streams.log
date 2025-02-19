@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target serial_com_nav[0m
+[0.091s] [ 33%] [32mBuilding CXX object CMakeFiles/serial_com_nav.dir/src/com_nav.cpp.o[0m
+[6.679s] [ 66%] [32m[1mLinking CXX executable serial_com_nav[0m
+[7.003s] [100%] Built target serial_com_nav
+[7.017s] Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+[7.027s] Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ricardo/com_nav_ws/build/com_nav
+[7.035s] -- Install configuration: ""
+[7.036s] -- Installing: /home/ricardo/com_nav_ws/install/com_nav/lib/com_nav/serial_com_nav
+[7.039s] -- Set runtime path of "/home/ricardo/com_nav_ws/install/com_nav/lib/com_nav/serial_com_nav" to ""
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/package_run_dependencies/com_nav
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/parent_prefix_path/com_nav
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.sh
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.dsv
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.sh
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.dsv
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.bash
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.sh
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.zsh
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.dsv
+[7.040s] -- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.dsv
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/packages/com_nav
+[7.040s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig.cmake
+[7.041s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig-version.cmake
+[7.041s] -- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.xml
+[7.042s] Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ricardo/com_nav_ws/build/com_nav

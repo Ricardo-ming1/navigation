@@ -1,0 +1,2 @@
+Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ricardo/com_nav_ws/src/com_nav -DCMAKE_INSTALL_PREFIX=/home/ricardo/com_nav_ws/install/com_nav
+Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ricardo/com_nav_ws/src/com_nav -DCMAKE_INSTALL_PREFIX=/home/ricardo/com_nav_ws/install/com_nav

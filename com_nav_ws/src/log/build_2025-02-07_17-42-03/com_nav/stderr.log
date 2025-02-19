@@ -1,0 +1,12 @@
+[31mCMake Error at CMakeLists.txt:18 (add_executable):
+  The target name "src/com_nav.cpp" is reserved or not valid for certain
+  CMake features, such as generator expressions, and may result in undefined
+  behavior.
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+  ament_target_dependencies() the first argument must be a valid target name
+Call Stack (most recent call first):
+  CMakeLists.txt:21 (ament_target_dependencies)
+
+[0m

@@ -1,0 +1,16 @@
+/home/ricardo/com_nav_ws/install/com_nav/lib/com_nav/serial_com_nav
+/home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/package_run_dependencies/com_nav
+/home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/parent_prefix_path/com_nav
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.sh
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.dsv
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.sh
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.dsv
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.bash
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.sh
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.zsh
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.dsv
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.dsv
+/home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/packages/com_nav
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig.cmake
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig-version.cmake
+/home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.xml

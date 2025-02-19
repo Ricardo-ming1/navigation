@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target com_nav[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/com_nav.dir/src/com_nav.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable com_nav[0m
+[100%] Built target com_nav
+-- Install configuration: ""
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/package_run_dependencies/com_nav
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/parent_prefix_path/com_nav
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.sh
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.dsv
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.sh
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.dsv
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.bash
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.sh
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.zsh
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.dsv
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.dsv
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/packages/com_nav
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig.cmake
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig-version.cmake
+-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.xml

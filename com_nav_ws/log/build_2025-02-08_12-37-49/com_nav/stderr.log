@@ -1,0 +1,74 @@
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   40 |     rclcpp::Subscription<[01;31m[Kgeometry_msgs[m[K::msg::Twist>::SharedPtr subscription_;  // 订阅器
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 |     rclcpp::Subscription<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr subscription_;  // 订阅器
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   40 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K subscription_;  // 订阅器
+      |                                                      [01;31m[K^~~~~~~~~[m[K
+      |                                                               [32m[K;[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:40:64:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   40 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Ksubscription_[m[K;  // 订阅器
+      |                                                                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                [32m[Krmw_subscription_t[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:93:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ does not name a type
+   93 |     void cmdVelCallback(const [01;31m[Kgeometry_msgs[m[K::msg::Twist::SharedPtr msg) {
+      |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:93:49:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   93 |     void cmdVelCallback(const geometry_msgs::msg[01;31m[K::[m[KTwist::SharedPtr msg) {
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:93:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   93 |     void cmdVelCallback[34m[K([m[Kconst geometry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KTwist::SharedPtr msg) {
+      |                        [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+      |                                                 [32m[K)[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:93:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   93 |     void cmdVelCallback(const geometry_msgs::[01;31m[Kmsg[m[K::Twist::SharedPtr msg) {
+      |                                              [01;31m[K^~~[m[K
+      |                                                 [32m[K;[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:93:51:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   93 |     void cmdVelCallback(const geometry_msgs::msg::[01;31m[KTwist[m[K::SharedPtr msg) {
+      |                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:119:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  119 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:[m[K In constructor ‘[01m[KSerialCommunicationNode::SerialCommunicationNode()[m[K’:
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   22 |         [01;31m[Ksubscription_[m[K = this->create_subscription<geometry_msgs::msg::Twist>(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:22:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   22 |         subscription_ = this->create_subscription<[01;31m[Kgeometry_msgs[m[K::msg::Twist>(
+      |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:22:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   22 |         subscription_ = this->[01;31m[Kcreate_subscription<geometry_msgs::msg::Twist>[m[K(
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:22:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSerialCommunicationNode::create_subscription<<expression error> >(const char [9], int, std::_Bind_helper<false, void (SerialCommunicationNode::*)(...), SerialCommunicationNode*, const std::_Placeholder<1>&>::type)[m[K’
+   22 |         subscription_ = [01;31m[Kthis->create_subscription<geometry_msgs::msg::Twist>([m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K            "/cmd_vel", 10, std::bind(&SerialCommunicationNode::cmdVelCallback, this, std::placeholders::_1)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;31m[K        )[m[K;  // 订阅 /cmd_vel 话题
+      |         [01;31m[K~[m[K                                                                    
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:22:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |         subscription_ = [01;31m[Kthis->create_subscription<geometry_msgs::msg::Twist>([m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K            "/cmd_vel", 10, std::bind(&SerialCommunicationNode::cmdVelCallback, this, std::placeholders::_1)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;31m[K        )[m[K;  // 订阅 /cmd_vel 话题
+      |         [01;31m[K~[m[K                                                                    
+gmake[2]: *** [CMakeFiles/com_nav.dir/build.make:76: CMakeFiles/com_nav.dir/src/com_nav.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/com_nav.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

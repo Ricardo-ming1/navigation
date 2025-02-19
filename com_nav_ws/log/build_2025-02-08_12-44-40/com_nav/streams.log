@@ -1,0 +1,9 @@
+[0.013s] Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target com_nav[0m
+[0.091s] [ 33%] [32mBuilding CXX object CMakeFiles/com_nav.dir/src/com_nav.cpp.o[0m
+[0.098s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp: No such file or directory
+[0.098s] compilation terminated.
+[0.098s] gmake[2]: *** [CMakeFiles/com_nav.dir/build.make:76: CMakeFiles/com_nav.dir/src/com_nav.cpp.o] Error 1
+[0.099s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/com_nav.dir/all] Error 2
+[0.099s] gmake: *** [Makefile:146: all] Error 2
+[0.103s] Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16

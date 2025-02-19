@@ -1,0 +1,17 @@
+[0.010s] Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+[0.071s] [ 66%] [32mBuilding CXX object CMakeFiles/com_nav.dir/src/com_nav.cpp.o[0m
+[0.072s] [ 66%] [32mBuilding CXX object CMakeFiles/com_nav.dir/src/CRC.cpp.o[0m
+[0.086s] [01m[K/home/ricardo/com_nav_ws/src/com_nav/src/CRC.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KCRC.h: No such file or directory
+[0.087s]     1 | #include [01;31m[K"CRC.h"[m[K
+[0.087s]       |          [01;31m[K^~~~~~~[m[K
+[0.087s] compilation terminated.
+[0.087s] gmake[2]: *** [CMakeFiles/com_nav.dir/build.make:90: CMakeFiles/com_nav.dir/src/CRC.cpp.o] Error 1
+[0.087s] gmake[2]: *** Waiting for unfinished jobs....
+[0.327s] [01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:16:10:[m[K [01;31m[Kfatal error: [m[KCRC.h: No such file or directory
+[0.327s]    16 | #include [01;31m[K"CRC.h"[m[K
+[0.327s]       |          [01;31m[K^~~~~~~[m[K
+[0.327s] compilation terminated.
+[0.329s] gmake[2]: *** [CMakeFiles/com_nav.dir/build.make:76: CMakeFiles/com_nav.dir/src/com_nav.cpp.o] Error 1
+[0.330s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/com_nav.dir/all] Error 2
+[0.330s] gmake: *** [Makefile:146: all] Error 2
+[0.333s] Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16

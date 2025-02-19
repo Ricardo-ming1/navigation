@@ -1,0 +1,61 @@
+[0.000000] (-) TimerEvent: {}
+[0.000155] (com_nav) JobQueued: {'identifier': 'com_nav', 'dependencies': OrderedDict()}
+[0.000509] (com_nav) JobStarted: {'identifier': 'com_nav'}
+[0.007560] (com_nav) JobProgress: {'identifier': 'com_nav', 'progress': 'cmake'}
+[0.008418] (com_nav) Command: {'cmd': ['/usr/bin/cmake', '/home/ricardo/com_nav_ws/src/com_nav', '-DCMAKE_INSTALL_PREFIX=/home/ricardo/com_nav_ws/src/install/com_nav'], 'cwd': '/home/ricardo/com_nav_ws/src/build/com_nav', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'ricardo'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/ricardo'), ('OLDPWD', '/home/ricardo/com_nav_ws/src/com_nav'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2566'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c31305b4f12f8d7829b4b35a67a5d20e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ricardo'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ricardo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/ricardo/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ricardo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ricardo/.fishros/bin/:/opt/Typora-linux-x64'), ('SESSION_MANAGER', 'local/ricardo:@/tmp/.ICE-unix/2566,unix/ricardo:/tmp/.ICE-unix/2566'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b454e75b_067f_4c36_823b_ec73fc43d903'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('JAVA_HOME', '/usr/lib/jvm/java-21-openjdk-amd64'), ('PWD', '/home/ricardo/com_nav_ws/src/build/com_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c31305b4f12f8d7829b4b35a67a5d20e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.084727] (com_nav) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099418] (-) TimerEvent: {}
+[0.152108] (com_nav) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.160148] (com_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199553] (-) TimerEvent: {}
+[0.224812] (com_nav) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.229359] (com_nav) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.229665] (com_nav) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.230176] (com_nav) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.232538] (com_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299674] (-) TimerEvent: {}
+[0.304079] (com_nav) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.308780] (com_nav) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.308978] (com_nav) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.309266] (com_nav) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.314107] (com_nav) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399797] (-) TimerEvent: {}
+[0.423754] (com_nav) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.495579] (com_nav) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.499899] (-) TimerEvent: {}
+[0.534503] (com_nav) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.538955] (com_nav) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.552462] (com_nav) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.562857] (com_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.576376] (com_nav) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600007] (-) TimerEvent: {}
+[0.615908] (com_nav) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.618461] (com_nav) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700123] (-) TimerEvent: {}
+[0.708084] (com_nav) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.733069] (com_nav) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.768402] (com_nav) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.776286] (com_nav) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800248] (-) TimerEvent: {}
+[0.841966] (com_nav) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.842303] (com_nav) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900353] (-) TimerEvent: {}
+[0.910343] (com_nav) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.911149] (com_nav) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.952542] (com_nav) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (add_executable):\n'}
+[0.952765] (com_nav) StderrLine: {'line': b'  The target name "src/com_nav.cpp" is reserved or not valid for certain\n'}
+[0.952946] (com_nav) StderrLine: {'line': b'  CMake features, such as generator expressions, and may result in undefined\n'}
+[0.953042] (com_nav) StderrLine: {'line': b'  behavior.\n'}
+[0.953119] (com_nav) StderrLine: {'line': b'\n'}
+[0.953190] (com_nav) StderrLine: {'line': b'\x1b[0m\n'}
+[0.953258] (com_nav) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[0.953327] (com_nav) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[0.953391] (com_nav) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.953454] (com_nav) StderrLine: {'line': b'  CMakeLists.txt:21 (ament_target_dependencies)\n'}
+[0.953515] (com_nav) StderrLine: {'line': b'\n'}
+[0.953575] (com_nav) StderrLine: {'line': b'\x1b[0m\n'}
+[0.953635] (com_nav) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.953703] (com_nav) StdoutLine: {'line': b'See also "/home/ricardo/com_nav_ws/src/build/com_nav/CMakeFiles/CMakeOutput.log".\n'}
+[0.960361] (com_nav) CommandEnded: {'returncode': 1}
+[0.981407] (com_nav) JobEnded: {'identifier': 'com_nav', 'rc': 1}
+[0.992252] (-) EventReactorShutdown: {}

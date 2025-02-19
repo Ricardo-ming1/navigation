@@ -1,0 +1,13 @@
+[0.011s] Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target serial_com_nav[0m
+[0.071s] [ 33%] [32mBuilding CXX object CMakeFiles/serial_com_nav.dir/src/com_nav.cpp.o[0m
+[2.015s] [01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:[m[K In member function ‘[01m[Kvoid SerialCommunicationNode::initializeSerial()[m[K’:
+[2.015s] [01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:65:1:[m[K [01;31m[Kerror: [m[Klvalue required as left operand of assignment
+[2.015s]    65 | [01;31m[K-[m[K
+[2.015s]       | [01;31m[K^[m[K
+[2.015s]    66 | [01;31m[K        tty.c_cflag[m[K &= ~CSIZE;            // 清除数据位掩码
+[2.015s]       |         [01;31m[K~~~~~~~~~~~[m[K
+[4.050s] gmake[2]: *** [CMakeFiles/serial_com_nav.dir/build.make:76: CMakeFiles/serial_com_nav.dir/src/com_nav.cpp.o] Error 1
+[4.050s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/serial_com_nav.dir/all] Error 2
+[4.050s] gmake: *** [Makefile:146: all] Error 2
+[4.053s] Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16

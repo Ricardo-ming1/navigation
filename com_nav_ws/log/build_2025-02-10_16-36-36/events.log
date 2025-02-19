@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (com_nav) JobQueued: {'identifier': 'com_nav', 'dependencies': OrderedDict()}
+[0.000557] (com_nav) JobStarted: {'identifier': 'com_nav'}
+[0.008660] (com_nav) JobProgress: {'identifier': 'com_nav', 'progress': 'cmake'}
+[0.009405] (com_nav) JobProgress: {'identifier': 'com_nav', 'progress': 'build'}
+[0.009839] (com_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ricardo/com_nav_ws/build/com_nav', '--', '-j16', '-l16'], 'cwd': '/home/ricardo/com_nav_ws/build/com_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ricardo'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/ricardo'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2284'), ('SYSTEMD_EXEC_PID', '2678'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5779'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ricardo'), ('JOURNAL_STREAM', '8:8941'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ricardo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/ricardo/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models:/home/ricardo/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ricardo/.local/bin:/opt/ros/humble/bin:/home/ricardo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ricardo/.fishros/bin/:/opt/Typora-linux-x64:/home/ricardo/.fishros/bin/:/opt/Typora-linux-x64'), ('SESSION_MANAGER', 'local/ricardo:@/tmp/.ICE-unix/2642,unix/ricardo:/tmp/.ICE-unix/2642'), ('INVOCATION_ID', '7977f05fbaee40e7a4fffd6722f3c178'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f3032ef98c.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('JAVA_HOME', '/usr/lib/jvm/java-21-openjdk-amd64'), ('PWD', '/home/ricardo/com_nav_ws/build/com_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062883] (com_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_com_nav\x1b[0m\n'}
+[0.079907] (com_nav) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/serial_com_nav.dir/src/com_nav.cpp.o\x1b[0m\n'}
+[0.099777] (-) TimerEvent: {}
+[0.200074] (-) TimerEvent: {}
+[0.300383] (-) TimerEvent: {}
+[0.400676] (-) TimerEvent: {}
+[0.500961] (-) TimerEvent: {}
+[0.601273] (-) TimerEvent: {}
+[0.701590] (-) TimerEvent: {}
+[0.801900] (-) TimerEvent: {}
+[0.902197] (-) TimerEvent: {}
+[1.002554] (-) TimerEvent: {}
+[1.102940] (-) TimerEvent: {}
+[1.203285] (-) TimerEvent: {}
+[1.303607] (-) TimerEvent: {}
+[1.403915] (-) TimerEvent: {}
+[1.504195] (-) TimerEvent: {}
+[1.604445] (-) TimerEvent: {}
+[1.704751] (-) TimerEvent: {}
+[1.805074] (-) TimerEvent: {}
+[1.905437] (-) TimerEvent: {}
+[2.005743] (-) TimerEvent: {}
+[2.106087] (-) TimerEvent: {}
+[2.206402] (-) TimerEvent: {}
+[2.306697] (-) TimerEvent: {}
+[2.406985] (-) TimerEvent: {}
+[2.507378] (-) TimerEvent: {}
+[2.607668] (-) TimerEvent: {}
+[2.707963] (-) TimerEvent: {}
+[2.808291] (-) TimerEvent: {}
+[2.908629] (-) TimerEvent: {}
+[3.008957] (-) TimerEvent: {}
+[3.109256] (-) TimerEvent: {}
+[3.209569] (-) TimerEvent: {}
+[3.309885] (-) TimerEvent: {}
+[3.410181] (-) TimerEvent: {}
+[3.510524] (-) TimerEvent: {}
+[3.610848] (-) TimerEvent: {}
+[3.711101] (-) TimerEvent: {}
+[3.811413] (-) TimerEvent: {}
+[3.911727] (-) TimerEvent: {}
+[4.012024] (-) TimerEvent: {}
+[4.112355] (-) TimerEvent: {}
+[4.212685] (-) TimerEvent: {}
+[4.313606] (-) TimerEvent: {}
+[4.413942] (-) TimerEvent: {}
+[4.514264] (-) TimerEvent: {}
+[4.614597] (-) TimerEvent: {}
+[4.714924] (-) TimerEvent: {}
+[4.815248] (-) TimerEvent: {}
+[4.915539] (-) TimerEvent: {}
+[5.015850] (-) TimerEvent: {}
+[5.116154] (-) TimerEvent: {}
+[5.216442] (-) TimerEvent: {}
+[5.316763] (-) TimerEvent: {}
+[5.417081] (-) TimerEvent: {}
+[5.517411] (-) TimerEvent: {}
+[5.617772] (-) TimerEvent: {}
+[5.718100] (-) TimerEvent: {}
+[5.818444] (-) TimerEvent: {}
+[5.918756] (-) TimerEvent: {}
+[6.019086] (-) TimerEvent: {}
+[6.119441] (-) TimerEvent: {}
+[6.219774] (-) TimerEvent: {}
+[6.253277] (com_nav) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable serial_com_nav\x1b[0m\n'}
+[6.319874] (-) TimerEvent: {}
+[6.420197] (-) TimerEvent: {}
+[6.520612] (-) TimerEvent: {}
+[6.566493] (com_nav) StdoutLine: {'line': b'[100%] Built target serial_com_nav\n'}
+[6.577191] (com_nav) CommandEnded: {'returncode': 0}
+[6.577844] (com_nav) JobProgress: {'identifier': 'com_nav', 'progress': 'install'}
+[6.585551] (com_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ricardo/com_nav_ws/build/com_nav'], 'cwd': '/home/ricardo/com_nav_ws/build/com_nav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ricardo'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/ricardo'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2284'), ('SYSTEMD_EXEC_PID', '2678'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5779'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ricardo'), ('JOURNAL_STREAM', '8:8941'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ricardo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/ricardo/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models:/home/ricardo/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ricardo/.local/bin:/opt/ros/humble/bin:/home/ricardo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ricardo/.fishros/bin/:/opt/Typora-linux-x64:/home/ricardo/.fishros/bin/:/opt/Typora-linux-x64'), ('SESSION_MANAGER', 'local/ricardo:@/tmp/.ICE-unix/2642,unix/ricardo:/tmp/.ICE-unix/2642'), ('INVOCATION_ID', '7977f05fbaee40e7a4fffd6722f3c178'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f3032ef98c.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('JAVA_HOME', '/usr/lib/jvm/java-21-openjdk-amd64'), ('PWD', '/home/ricardo/com_nav_ws/build/com_nav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.593511] (com_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.594477] (com_nav) StdoutLine: {'line': b'-- Installing: /home/ricardo/com_nav_ws/install/com_nav/lib/com_nav/serial_com_nav\n'}
+[6.598187] (com_nav) StdoutLine: {'line': b'-- Set runtime path of "/home/ricardo/com_nav_ws/install/com_nav/lib/com_nav/serial_com_nav" to ""\n'}
+[6.598478] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/package_run_dependencies/com_nav\n'}
+[6.598621] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/parent_prefix_path/com_nav\n'}
+[6.598730] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.sh\n'}
+[6.598818] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/ament_prefix_path.dsv\n'}
+[6.598919] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.sh\n'}
+[6.599024] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/environment/path.dsv\n'}
+[6.599107] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.bash\n'}
+[6.599189] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.sh\n'}
+[6.599275] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.zsh\n'}
+[6.599359] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/local_setup.dsv\n'}
+[6.599477] (com_nav) StdoutLine: {'line': b'-- Installing: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.dsv\n'}
+[6.599531] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/ament_index/resource_index/packages/com_nav\n'}
+[6.599575] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig.cmake\n'}
+[6.599614] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/cmake/com_navConfig-version.cmake\n'}
+[6.599653] (com_nav) StdoutLine: {'line': b'-- Up-to-date: /home/ricardo/com_nav_ws/install/com_nav/share/com_nav/package.xml\n'}
+[6.600629] (com_nav) CommandEnded: {'returncode': 0}
+[6.614553] (com_nav) JobEnded: {'identifier': 'com_nav', 'rc': 0}
+[6.615214] (-) EventReactorShutdown: {}

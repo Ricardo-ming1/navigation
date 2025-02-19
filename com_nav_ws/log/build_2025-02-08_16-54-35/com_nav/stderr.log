@@ -1,0 +1,9 @@
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:[m[K In member function ‘[01m[Kvoid SerialCommunicationNode::initializeSerial()[m[K’:
+[01m[K/home/ricardo/com_nav_ws/src/com_nav/src/com_nav.cpp:65:1:[m[K [01;31m[Kerror: [m[Klvalue required as left operand of assignment
+   65 | [01;31m[K-[m[K
+      | [01;31m[K^[m[K
+   66 | [01;31m[K        tty.c_cflag[m[K &= ~CSIZE;            // 清除数据位掩码
+      |         [01;31m[K~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/serial_com_nav.dir/build.make:76: CMakeFiles/serial_com_nav.dir/src/com_nav.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/serial_com_nav.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

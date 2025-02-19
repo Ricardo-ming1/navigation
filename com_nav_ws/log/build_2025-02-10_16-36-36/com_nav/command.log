@@ -1,0 +1,4 @@
+Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ricardo/com_nav_ws/build/com_nav -- -j16 -l16
+Invoking command in '/home/ricardo/com_nav_ws/build/com_nav': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ricardo/com_nav_ws/build/com_nav
+Invoked command in '/home/ricardo/com_nav_ws/build/com_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ricardo/com_nav_ws/build/com_nav
