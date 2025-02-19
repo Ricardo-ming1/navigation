@@ -1,0 +1,161 @@
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/point_cloud2.hpp>
+#include <livox_ros_driver2/msg/custom_msg.hpp>
+#include <pcl_conversions/pcl_conversions.h>
+#include <pcl/common/transforms.h>
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+#include <iostream>
+#include <deque>
+#include <chrono>
+
+// 定义点类型和点云类型
+typedef pcl::PointXYZINormal PointType;  // 包含坐标、强度、法向量的点类型
+typedef pcl::PointCloud<PointType> PointCloudXYZI;  // 点云类型
+
+// 使用ROS 2消息类型别名
+using sensor_msgs::msg::PointCloud2;
+using livox_ros_driver2::msg::CustomMsg;
+
+class PointCloudMergeNode : public rclcpp::Node
+{
+public:
+    PointCloudMergeNode() : Node("point_cloud_merge_node")
+    {
+        // 创建发布者，发布合并后的点云
+        merged_pub_ = this->create_publisher<CustomMsg>("/livox/merged_points", 10);
+
+        // 创建订阅者，订阅两个LiDAR的点云数据
+        sub_left_ = this->create_subscription<CustomMsg>(
+            "/livox/lidar_192_168_1_187", 10,
+            std::bind(&PointCloudMergeNode::leftCloudCallback, this, std::placeholders::_1));
+
+        sub_right_ = this->create_subscription<CustomMsg>(
+            "/livox/lidar_192_168_1_3", 10,
+            std::bind(&PointCloudMergeNode::rightCloudCallback, this, std::placeholders::_1));
+    }
+
+private:
+    // 左LiDAR点云回调函数
+    void leftCloudCallback(const CustomMsg::ConstSharedPtr& msg)
+    {
+        processPointCloud(msg, true);
+    }
+
+    // 右LiDAR点云回调函数
+    void rightCloudCallback(const CustomMsg::ConstSharedPtr& msg)
+    {
+        processPointCloud(msg, false);
+    }
+
+    // 处理点云数据
+    void processPointCloud(const CustomMsg::ConstSharedPtr& msg, bool is_left)
+    {
+        // 将CustomMsg转换为PCL点云
+        PointCloudXYZI point_cloud;
+        for (const auto& point : msg->points) {
+            PointType pcl_point;
+            pcl_point.x = point.x;
+            pcl_point.y = point.y;
+            pcl_point.z = point.z;
+            pcl_point.intensity = point.reflectivity;
+            point_cloud.push_back(pcl_point);
+        }
+
+        // 定义变换矩阵
+        Eigen::Matrix4f transform = is_left ? getLeftTransform() : getRightTransform();
+
+        // 对点云进行变换
+        PointCloudXYZI transformed_cloud;
+        pcl::transformPointCloud(point_cloud, transformed_cloud, transform);
+
+        // 保存点云和时间戳
+        CloudWithStamp cloud_with_stamp;
+        cloud_with_stamp.cloud = transformed_cloud;
+        cloud_with_stamp.stamp = msg->header.stamp;  // 保留时间戳
+
+        if (is_left) {
+            left_cloud_queue_.push_back(cloud_with_stamp);
+        } else {
+            right_cloud_queue_.push_back(cloud_with_stamp);
+        }
+
+        // 尝试合并点云
+        tryMergeClouds();
+    }
+
+    // 尝试合并点云
+    void tryMergeClouds()
+    {
+        // 如果两个队列都不为空，则合并点云
+        if (!left_cloud_queue_.empty() && !right_cloud_queue_.empty()) {
+            auto& left_cloud = left_cloud_queue_.front();
+            auto& right_cloud = right_cloud_queue_.front();
+
+            // 合并点云
+            PointCloudXYZI merged_cloud = left_cloud.cloud + right_cloud.cloud;
+
+            // 将PCL点云转换为ROS 2的PointCloud2消息
+            auto merged_msg = std::make_shared<PointCloud2>();
+            pcl::toROSMsg(merged_cloud, *merged_msg);
+            merged_msg->header.stamp = left_cloud.stamp;  // 使用左点云的时间戳
+            merged_msg->header.frame_id = "livox";  // 设置坐标系
+
+            // 发布合并后的点云
+            merged_pub_->publish(*merged_msg);
+
+            // 移除已处理的数据
+            left_cloud_queue_.pop_front();
+            right_cloud_queue_.pop_front();
+        }
+    }
+
+    // 获取左LiDAR的变换矩阵
+    Eigen::Matrix4f getLeftTransform()
+    {
+        Eigen::Matrix4f transform = Eigen::Matrix4f::Identity();
+        transform(0, 0) = 0.6380962;
+        transform(0, 1) = -0.7699567;
+        transform(0, 3) = -0.05;  // X轴平移
+        transform(1, 0) = 0.7699567;
+        transform(1, 1) = 0.6380962;
+        transform(1, 3) = 0.15;  // Y轴平移
+        transform(2, 2) = 1;  // Z轴保持不变
+        return transform;
+    }
+
+    // 获取右LiDAR的变换矩阵
+    Eigen::Matrix4f getRightTransform()
+    {
+        Eigen::Matrix4f transform = Eigen::Matrix4f::Identity();
+        transform(0, 0) = 0.6461240;
+        transform(0, 1) = 0.7632325;
+        transform(0, 3) = -0.05;  // X轴平移
+        transform(1, 0) = -0.7632325;
+        transform(1, 1) = 0.6461240;
+        transform(1, 3) = -0.15;  // Y轴平移
+        transform(2, 2) = 1;  // Z轴保持不变
+        return transform;
+    }
+
+    // 定义点云和时间戳的结构
+    struct CloudWithStamp {
+        PointCloudXYZI cloud;
+        builtin_interfaces::msg::Time stamp;
+    };
+
+    // 成员变量
+    rclcpp::Publisher<PointCloud2>::SharedPtr merged_pub_;  // 发布合并后的点云
+    rclcpp::Subscription<CustomMsg>::SharedPtr sub_left_;  // 左LiDAR点云订阅者
+    rclcpp::Subscription<CustomMsg>::SharedPtr sub_right_;  // 右LiDAR点云订阅者
+    std::deque<CloudWithStamp> left_cloud_queue_;  // 左LiDAR点云队列
+    std::deque<CloudWithStamp> right_cloud_queue_;  // 右LiDAR点云队列
+};
+
+int main(int argc, char* argv[])
+{
+    rclcpp::init(argc, argv);  // 初始化ROS 2
+    rclcpp::spin(std::make_shared<PointCloudMergeNode>());  // 运行节点
+    rclcpp::shutdown();  // 关闭ROS 2
+    return 0;
+}
